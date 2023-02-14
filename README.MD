@@ -4,6 +4,9 @@ Esta API permite que você simule a criação de uma conta bancária, fazer dep�
 Autenticação
 Nenhuma autenticação é necessária para usar esta API.
 
+
+
+
 Criar conta
 Para criar uma nova conta, faça uma chamada POST para http://localhost:8080/account/register/create com um objeto JSON contendo as seguintes informações:
 
@@ -16,6 +19,9 @@ O fiscalNumber pode ser um CPF ou um CNPJ!
 
 Resposta
 Número da conta: 123456789
+
+
+
 
 
 Fazer depósito
@@ -33,6 +39,9 @@ Resposta
 }
 
 
+
+
+
 Fazer saque
 Para fazer um saque de uma conta, faça uma chamada POST para http://localhost:8080/account/withdraw/{Número da conta} com um objeto JSON contendo a seguinte informação:
 {
@@ -46,6 +55,9 @@ Resposta
 "balance":4201.54,
 "accountNumber":"123456789"
 }
+
+
+
 
 
 Fazer transferência
@@ -65,6 +77,10 @@ Resposta
 "balance":4201.54,
 "accountNumber":"123456789"
 }
+
+
+
+
 
 5-)PUXANDO UM EXTRATO
 Para puxar um extrato faça uma chamada GET http://localhost:8080/account/extract/{Número da conta(criada no primeiro passo)}
